@@ -1,0 +1,20 @@
+server:
+  port: 1570
+
+spring:
+  application:
+    name: authentication-api
+  datasource:
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 10
+    url: jdbc:postgresql://localhost:5432/{your_database}
+    username: {your user_name}
+    password: {your_password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+jwt:
+  secret: wasd87x51sd1145sasadzf34
+
